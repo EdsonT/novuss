@@ -1,8 +1,8 @@
 package com.novus.novuserp.domain;
 public class Project extends BaseEntity {
 
-    String name;
-    String description;
+    private String name;
+    private String description;
 
     public Project(String name, String description) {
         this.name = name;
@@ -25,5 +25,11 @@ public class Project extends BaseEntity {
         this.description = description;
     }
 
-
+    @Override
+    public String toString() {
+        return "Project{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
